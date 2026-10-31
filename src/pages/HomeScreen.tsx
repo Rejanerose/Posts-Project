@@ -1,12 +1,10 @@
-
-import PostsList from "../features/posts/components/PostsList";
-
+import PostList from "@/features/posts/components/PostsList";
 const HomeScreen = () => {
-  return (
-    <main className="mt-10">
-      <PostsList />
-    </main>
-  );
+ return (
+ <>
+ <h1 className="sr-only">Posts</h1>
+ <PostList />
+ </>
+ );
 };
-
 export default HomeScreen;
